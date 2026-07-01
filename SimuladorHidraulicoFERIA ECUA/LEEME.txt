@@ -1,0 +1,36 @@
+═══════════════════════════════════════════════════════════
+ SIMULADOR HIDRÁULICO — Ecuaciones Diferenciales Ordinarias
+ FICCT · UAGRM · Feria Facultativa 1/2026
+ Versión 5 (PDF mejorado)
+═══════════════════════════════════════════════════════════
+
+CÓMO USAR:
+  1. Abrir "index.html" en cualquier navegador moderno
+     (Chrome, Edge, Firefox — recomendado Chrome/Edge)
+  2. El archivo "escudo.png" debe estar en la misma carpeta
+     para que aparezca el logo en la carátula del PDF
+
+MODELOS DISPONIBLES:
+  • Tanque simple (vaciado — solución analítica exacta)
+  • Con bomba (llenado/vaciado — estado estacionario)
+  • Dos tanques (sistema acoplado — RK4)
+  • Interconectados (sistema no lineal — RK4)
+
+GENERACIÓN DE PDF (v5):
+  • Botón "📥 Descargar PDF" en la pestaña REPORTE
+  • Lógica: HTML → iframe oculto → html2canvas (escala 2x)
+            → jsPDF JPEG 0.92 → 5 páginas A4
+  • Carátula con borde doble estilo FICCT (azul UAGRM)
+  • Cabecera/pie institucional en páginas internas
+  • Ecuaciones en HTML con notación matemática correcta
+  • Tabla RK4 (hasta 38 filas), gráficas + esquema
+
+CÓDIGO LaTeX:
+  • Botón "📋 Ver Código LaTeX" genera documento completo
+  • Compatible con pdfLaTeX / XeLaTeX
+  • Incluye gráficas TikZ/PGFPlots con datos reales
+
+NOTA: Requiere conexión a internet para cargar
+      Chart.js, MathJax, jsPDF y html2canvas desde CDN.
+
+Desarrollado para FICCT-UAGRM · 2026
